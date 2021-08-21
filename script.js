@@ -25,6 +25,11 @@ function writePassword() {
     numbers = confirm ("World you like numbers?"); 
   }
 
+  const uppercaseletter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const lowercaseletter = "abcdefghijklmnopqrstuvwxyz"
+  const num = "1234567890"
+  const sym = "!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~"
+
   passwordText.value = password;
 
 }

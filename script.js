@@ -25,10 +25,29 @@ function writePassword() {
     numbers = confirm ("World you like numbers?"); 
   }
 
-  const uppercaseletter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  const lowercaseletter = "abcdefghijklmnopqrstuvwxyz"
-  const num = "1234567890"
-  const sym = "!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~"
+  var master = "";
+  const up = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const low = "abcdefghijklmnopqrstuvwxyz";
+  const num = "1234567890";
+  const sym = "!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~";
+
+  if (uppercase == true) {
+    master += up
+  }
+  if (lowercase == true) {
+    master += low
+  }
+  if (symbols == true) {
+    master += num
+  }
+  if (numbers == true) {
+    master += sym
+  }
+
+  for (let i = 0; i < length; i++) {
+    password += master[Math.floor(Math.random() * master.length)];
+  }
+
 
   passwordText.value = password;
 

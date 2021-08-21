@@ -24,7 +24,6 @@ function writePassword() {
     symbols = confirm ("Would you like symbols?");
     numbers = confirm ("World you like numbers?"); 
   }
-  
 
   passwordText.value = password;
 
